@@ -1,0 +1,30 @@
+server:
+  port: 8769
+
+spring:
+  application:
+    name: sc-service-zuul
+
+# 配置spring cloud 服务发现
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+# Zuul的主要功能是路由转发和过滤器
+zuul:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 50000
+  prefix: /ant
+  #默认转发时会剥离前缀，strip-prefix=false不剥离前缀
+  #strip-prefix: false
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: sc-service-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: sc-service-feign

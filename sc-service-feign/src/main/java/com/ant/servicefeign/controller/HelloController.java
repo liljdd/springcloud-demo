@@ -17,12 +17,14 @@ public class HelloController {
     HelloService helloService;
 
     /**
-     * http://localhost:8765/hello?name=ant
+     * http://localhost:8765/hi?name=ant
+     *
      * @param name
      * @return
      */
-    @GetMapping(value = "/hello")
+    @GetMapping(value = "/hi")
     public String sayHi(@RequestParam String name) {
+        name = name + "-feign";
         return helloService.hiService(name);
     }
 }

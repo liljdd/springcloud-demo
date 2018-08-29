@@ -23,6 +23,7 @@ public class HelloController {
      */
     @GetMapping(value = "/hi")
     public String hi(@RequestParam String name) {
+        name = name + "-ribbon";
         return helloService.hiService(name);
     }
 }
