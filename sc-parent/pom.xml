@@ -22,6 +22,7 @@
         <module>../sc-eureka-server</module>
         <module>../sc-eureka-client</module>
         <module>../sc-service-ribbon</module>
+        <module>../sc-service-feign</module>
     </modules>
 
     <!--集中定义依赖版本号-->
