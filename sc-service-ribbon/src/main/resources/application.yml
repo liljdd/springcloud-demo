@@ -1,9 +1,9 @@
 server:
-  port: 8763
+  port: 8764
 
 spring:
   application:
-    name: sc-service-hi
+    name: sc-service-ribbon
 
 # 配置spring cloud 服务发现
 eureka:
