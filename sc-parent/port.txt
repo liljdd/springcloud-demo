@@ -5,3 +5,4 @@ sc-service-ribbon8764
 sc-service-feign:8765
 sc-service-zuul:8767
 sc-config-service:8769
+sc-config-client:8770

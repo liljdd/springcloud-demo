@@ -16,7 +16,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 public class ConfigServerApplication {
 
     /**
-     * http://localhost:8769/eureka-client/dev
+     * http://localhost:8769/sc-config-client/dev
      */
     public static void main(String[] args) {
         SpringApplication.run(ConfigServerApplication.class, args);
