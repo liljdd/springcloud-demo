@@ -1,0 +1,7 @@
+服务名：端口号
+sc-eurka-server:8761
+sc-service-hi:8762 8763
+sc-service-ribbon8764
+sc-service-feign:8765
+sc-service-zuul:8767
+sc-config-service:8769

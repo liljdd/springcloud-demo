@@ -1,9 +1,18 @@
 server:
-  port: 8768
+  port: 8769 #服务端口
 
 spring:
   application:
-    name: sc-config-service
+    name: sc-config-service #指定服务名
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/liljdd/SpringCloudConfig/ #配置git仓库地址
+          search-paths: respo #配置仓库路径
+          username: #访问git仓库的用户名 公开仓库，可以不填写用户名和密码
+          password: #
+      label: master #配置仓库的分支
 
 # 配置spring cloud 服务发现
 eureka:
