@@ -1,6 +1,6 @@
 # 配置端口失效，端口号变成8882，原因未找到
 server:
-  port: 8770 #服务端口
+  port: 8881 #服务端口
 
 spring:
   application:
@@ -9,11 +9,11 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8769/
+#      uri: http://localhost:8888/ #读取配置文件使用spring.cloud.config.discovery.serviceId
       name: sc-config-client
-#      discovery:
-#        enabled: true #启用发现服务功能
-#        service-id: sc-config-server #指定服务名称
+      discovery:
+        enabled: true #启用发现服务功能
+        service-id: sc-config-server #指定服务名称
 
 
 # 配置spring cloud 服务发现

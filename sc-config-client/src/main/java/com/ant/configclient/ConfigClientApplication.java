@@ -25,7 +25,7 @@ public class ConfigClientApplication {
     String foo;
 
     /**
-     * http://localhost:8770/hi
+     * http://localhost:8882/hi
      */
     @RequestMapping(value = "/hi")
     public String hi() {
